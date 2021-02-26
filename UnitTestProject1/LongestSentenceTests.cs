@@ -6,14 +6,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace UnitTestProject1
 {
     [TestClass]
-    public class SolutionTests
+    public class LongestSentenceTests
     {
         [TestMethod]
         public void BreakStringIntoSentences_ReturnListOfSentences_Regardless()
         {
             //Arrange
             string testString = "We Test Coders. Give us a try?";
-            var solution = new Solution();
+            var solution = new LongestSentence();
 
             //Act
             solution.BreakStringIntoSentences(testString);
@@ -28,7 +28,7 @@ namespace UnitTestProject1
         public void FindLongestSentence_ReturnsListsOfWords_Regardless()
         {
             //Arrange
-            var solution = new Solution();
+            var solution = new LongestSentence();
             string testString = "We Test Coders. Give us a try? Please give us a try, I promise we will be nice. No! Ok then.";
 
             solution.BreakStringIntoSentences(testString);

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodeTest
 {
-    public class Solution
+    public class LongestSentence
     {
         public string[] sentences;
         public int LongestSentenceIndex;
